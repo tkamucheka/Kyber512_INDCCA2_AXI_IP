@@ -5,7 +5,7 @@
 // 
 // Create Date: 03/08/2021 01:10:30 AM
 // Design Name: 
-// Module Name: Montgomery_reduce
+// Module Name: NTT
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 

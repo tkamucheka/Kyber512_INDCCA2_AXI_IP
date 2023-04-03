@@ -24,14 +24,14 @@ module State_Polytomsg#(
   output reg [o_Msg_Size -1 : 0]  oMsg  
 );
 
-// systhesis translate_off
+// synthesis translate_off
 integer cycles = 0;
 reg enable_counter = 0;
 always @(posedge clk) begin
   if (enable_counter) 
     cycles <= cycles + 1;
 end
-// sythesis translate_on
+// synthesis translate_on
 
 reg  cal_enable;                            
 wire Cal_oDone;
@@ -41,10 +41,10 @@ integer i;
 reg get;
 
 reg [1:0] cstate,nstate;
-parameter IDLE          = 2'd0;
-parameter Pop_Mp        = 2'd1;
-parameter Cal           = 2'd2;
-parameter Push_Msg      = 2'd3;
+localparam IDLE          = 2'd0;
+localparam Pop_Mp        = 2'd1;
+localparam Cal           = 2'd2;
+localparam Push_Msg      = 2'd3;
 
 always @(posedge clk or negedge rst_n)
   if (!rst_n) cstate <= IDLE;
@@ -81,7 +81,7 @@ always @(posedge clk or negedge rst_n)
           get <= 0;
           i <= 255;
           
-          // systhesis translate_off
+          // synthesis translate_off
           enable_counter          <= 1'b1;
           // synthesis translate_on
         end      
@@ -108,7 +108,7 @@ always @(posedge clk or negedge rst_n)
           Function_done <= 1'b1;
           i <= 255;
 
-          // systhesis translate_off
+          // synthesis translate_off
           enable_counter          <= 1'b0;
           // synthesis translate_on
         end

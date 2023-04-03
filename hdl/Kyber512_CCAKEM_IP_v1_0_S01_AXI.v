@@ -591,8 +591,8 @@ endfunction
       o_status_reg    <= 32'b0;
       SS_outready     <= 1'b0;
       CT_outready     <= 1'b0;
-      CT_WAd          <= 1'b0;
-      o_function_done  <= 1'b0;
+      CT_WAd          <= 8'hx;
+      o_function_done <= 1'b0;
     end else begin
       case ({cstate,nstate})
         {IDLE,IDLE}: begin
@@ -614,7 +614,7 @@ endfunction
         {WRITE_ENC,IDLE}: begin
           o_function_done <= 1'b1;
           CT_outready     <= 1'b0;
-          CT_WAd          <= 1'b0;
+          CT_WAd          <= 8'hx;
           o_status_reg[0] <= 1'b1; 
         end
         {IDLE,WRITE_DEC}: begin
@@ -632,100 +632,6 @@ endfunction
       endcase
     end
   end
-
-  // concat #(
-  //   .INPUT_WIDTH(C_S_AXI_DATA_WIDTH), 
-  //   .OUTPUT_WIDTH(RAND_SZ)) i_Rand_Concat_0
-  // (
-  //    .i_clk(S_AXI_ACLK),
-  //    .i_reset_n(i_reset_n),
-  //    .i_enable(i_control[3]),
-  //    .i_data_in(slv_reg0),
-  //    .o_data_out(o_random),
-  //    .o_full_tick(o_status_tick[3])
-  // );
-  
-  // concat #(
-  //   .INPUT_WIDTH(C_S_AXI_DATA_WIDTH), 
-  //   .OUTPUT_WIDTH(PUBLIC_KEY_SZ)) i_PK_Concat_0
-  // (
-  //    .i_clk(S_AXI_ACLK),
-  //    .i_reset_n(i_reset_n),
-  //    .i_enable(i_control[4]),
-  //    .i_data_in(slv_reg1),
-  //    .o_data_out(o_public_key),
-  //    .o_full_tick(o_status_tick[4])
-  // );
-
-  // splitter2 #(
-  //  .ADDR_WIDTH(8),
-  //  .INPUT_WIDTH(CIPHERTEXT_SZ), 
-  //  .OUTPUT_WIDTH(C_S_AXI_DATA_WIDTH)) o_CT_Split_0
-  // (
-  //  .i_clk(S_AXI_ACLK),
-  //  .i_reset_n(i_reset_n),
-  //  .i_chomp(i_encryption_done),
-  //  .i_addr(slv_reg7[7:0]),
-  //  .i_data_in(i_ciphertext),
-  //  // .i_data_in({Bp_debug, V_debug, 896'h0, reduceBp_debug, reduceV_debug, i_ciphertext[5887 -: 2944]}),
-  //  // .i_data_in({ntt_debug, 1792'h0}),
-  //  // .i_data_in({reduceV_debug, reduceBp_debug, 5376'h0}),
-  //  .o_data_out(w_ociphertext),
-  //  .o_full(o_status_tick[9])
-  // );
-  
-  //  splitter2 #(
-  //    .ADDR_WIDTH(8),
-  //    .INPUT_WIDTH(SHARED_SECRET_SZ), 
-  //    .OUTPUT_WIDTH(C_S_AXI_DATA_WIDTH)) o_SS_Split_0
-  //  (
-  //  .i_clk(S_AXI_ACLK),
-  //  .i_reset_n(i_reset_n),
-  //  .i_chomp(i_encryption_done),
-  //  .i_addr(slv_reg7[7:0]),
-  //  .i_data_in(i_shared_secreta),
-  //  .o_data_out(w_shared_secreta),
-  //  .o_full(o_status_tick[7])
-  //  );
-  
-  // DEC
-  //  concat #(
-  //   .INPUT_WIDTH(C_S_AXI_DATA_WIDTH), 
-  //   .OUTPUT_WIDTH(RAND_SZ)) i_CT_Concat_0
-  // (
-  //    .i_clk(S_AXI_ACLK),
-  //    .i_reset_n(i_reset_n),
-  //    .i_enable(i_control[5]),
-  //    .i_data_in(slv_reg2),
-  //    .o_data_out(o_cipher_text),
-  //    .o_full_tick(o_status_tick[5])
-  // );
-  
-  // concat #(
-  //   .INPUT_WIDTH(C_S_AXI_DATA_WIDTH), 
-  //   .OUTPUT_WIDTH(PUBLIC_KEY_SZ)) i_SK_Concat_0
-  // (
-  //    .i_clk(S_AXI_ACLK),
-  //    .i_reset_n(i_reset_n),
-  //    .i_enable(i_control[6]),
-  //    .i_data_in(slv_reg3),
-  //    .o_data_out(o_secret_key),
-  //    .o_full_tick(o_status_tick[6])
-  // );
-  
-  // splitter2 #(
-  //  .ADDR_WIDTH(8),
-  //   .INPUT_WIDTH(SHARED_SECRET_SZ), 
-  //   .OUTPUT_WIDTH(C_S_AXI_DATA_WIDTH)) o_SS_Split_1
-  // (
-  //   .i_clk(S_AXI_ACLK),
-  //    .i_reset_n(i_reset_n),
-  //    .i_chomp(i_encryption_done),
-  //    .i_addr(slv_reg7),
-  //    .i_data_in(i_shared_secretb),
-  //    .o_data_out(w_shared_secretb),
-  //    .o_full(o_status_tick[8])
-  // );
   // User logic ends
 
   endmodule

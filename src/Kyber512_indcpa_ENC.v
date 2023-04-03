@@ -249,14 +249,14 @@ localparam Pack   = 4'd8;
 
 assign o_cstate = cstate;
 
-// systhesis translate_off
+// synthesis translate_off
 integer cycles = 0;
 reg enable_enc_counter = 0;
 always @(posedge clk) begin
   if (enable_enc_counter) 
     cycles <= cycles + 1;
 end
-// sythesis translate_on
+// synthesis translate_on
 
 always @(posedge clk or negedge rst_n)
   if(!rst_n) cstate <= IDLE;
@@ -322,7 +322,7 @@ always @(posedge clk)
           P1_Poly_frommsg_enable  <= 1'b1;
           trigger <= 1'b1;
 
-          // systhesis translate_off
+          // synthesis translate_off
           enable_enc_counter      <= 1'b1;
           // synthesis translate_on 
         end       
@@ -386,7 +386,7 @@ always @(posedge clk)
           o_Ciphertext       <= { P8_o_Ciphertext0_0, P8_o_Ciphertext0_1, P8_o_Ciphertext1 };
           trigger            <= 1'b0;
 
-          // systhesis translate_off
+          // synthesis translate_off
           enable_enc_counter <= 1'b0;
           // synthesis translate_on 
         end
