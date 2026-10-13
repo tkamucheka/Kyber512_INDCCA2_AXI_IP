@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" role="img" aria-label="A lattice and an FPGA chip implementing masked Kyber512">
+  <defs>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="1.3" fill="#2c2c2c"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#268bd2"/>
+    </marker>
+    <marker id="arrow-dim" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#6f6f6f"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="300" fill="#202020"/>
+  <rect width="1200" height="300" fill="url(#dots)"/>
+  <circle cx="47" cy="280" r="3" fill="#6f6f6f"/>
+  <circle cx="42" cy="164" r="3" fill="#6f6f6f"/>
+  <circle cx="59" cy="206" r="3" fill="#6f6f6f"/>
+  <circle cx="76" cy="248" r="3" fill="#6f6f6f"/>
+  <circle cx="54" cy="90" r="3" fill="#6f6f6f"/>
+  <circle cx="71" cy="132" r="3" fill="#6f6f6f"/>
+  <circle cx="88" cy="174" r="3" fill="#6f6f6f"/>
+  <circle cx="105" cy="216" r="3" fill="#6f6f6f"/>
+  <circle cx="122" cy="258" r="3" fill="#6f6f6f"/>
+  <circle cx="83" cy="58" r="3" fill="#6f6f6f"/>
+  <circle cx="100" cy="100" r="3" fill="#6f6f6f"/>
+  <circle cx="117" cy="142" r="3" fill="#6f6f6f"/>
+  <circle cx="134" cy="184" r="3" fill="#6f6f6f"/>
+  <circle cx="151" cy="226" r="3" fill="#6f6f6f"/>
+  <circle cx="168" cy="268" r="3" fill="#6f6f6f"/>
+  <circle cx="112" cy="26" r="3" fill="#6f6f6f"/>
+  <circle cx="129" cy="68" r="3" fill="#6f6f6f"/>
+  <circle cx="146" cy="110" r="3" fill="#6f6f6f"/>
+  <circle cx="163" cy="152" r="3" fill="#6f6f6f"/>
+  <circle cx="180" cy="194" r="3" fill="#6f6f6f"/>
+  <circle cx="197" cy="236" r="3" fill="#6f6f6f"/>
+  <circle cx="214" cy="278" r="3" fill="#6f6f6f"/>
+  <circle cx="158" cy="36" r="3" fill="#6f6f6f"/>
+  <circle cx="175" cy="78" r="3" fill="#6f6f6f"/>
+  <circle cx="192" cy="120" r="3" fill="#6f6f6f"/>
+  <circle cx="209" cy="162" r="3" fill="#6f6f6f"/>
+  <circle cx="226" cy="204" r="3" fill="#6f6f6f"/>
+  <circle cx="243" cy="246" r="3" fill="#6f6f6f"/>
+  <circle cx="204" cy="46" r="3" fill="#6f6f6f"/>
+  <circle cx="221" cy="88" r="3" fill="#6f6f6f"/>
+  <circle cx="238" cy="130" r="3" fill="#6f6f6f"/>
+  <circle cx="255" cy="172" r="3" fill="#6f6f6f"/>
+  <circle cx="272" cy="214" r="3" fill="#6f6f6f"/>
+  <circle cx="289" cy="256" r="3" fill="#6f6f6f"/>
+  <circle cx="250" cy="56" r="3" fill="#6f6f6f"/>
+  <circle cx="267" cy="98" r="3" fill="#6f6f6f"/>
+  <circle cx="284" cy="140" r="3" fill="#6f6f6f"/>
+  <circle cx="301" cy="182" r="3" fill="#6f6f6f"/>
+  <circle cx="318" cy="224" r="3" fill="#6f6f6f"/>
+  <circle cx="335" cy="266" r="3" fill="#6f6f6f"/>
+  <circle cx="279" cy="24" r="3" fill="#6f6f6f"/>
+  <circle cx="296" cy="66" r="3" fill="#6f6f6f"/>
+  <circle cx="313" cy="108" r="3" fill="#6f6f6f"/>
+  <circle cx="330" cy="150" r="3" fill="#6f6f6f"/>
+  <circle cx="347" cy="192" r="3" fill="#6f6f6f"/>
+  <circle cx="364" cy="234" r="3" fill="#6f6f6f"/>
+  <circle cx="381" cy="276" r="3" fill="#6f6f6f"/>
+  <circle cx="325" cy="34" r="3" fill="#6f6f6f"/>
+  <circle cx="342" cy="76" r="3" fill="#6f6f6f"/>
+  <circle cx="359" cy="118" r="3" fill="#6f6f6f"/>
+  <circle cx="376" cy="160" r="3" fill="#6f6f6f"/>
+  <circle cx="393" cy="202" r="3" fill="#6f6f6f"/>
+  <circle cx="410" cy="244" r="3" fill="#6f6f6f"/>
+  <circle cx="371" cy="44" r="3" fill="#6f6f6f"/>
+  <circle cx="388" cy="86" r="3" fill="#6f6f6f"/>
+  <circle cx="405" cy="128" r="3" fill="#6f6f6f"/>
+  <circle cx="422" cy="170" r="3" fill="#6f6f6f"/>
+  <circle cx="439" cy="212" r="3" fill="#6f6f6f"/>
+  <circle cx="456" cy="254" r="3" fill="#6f6f6f"/>
+  <circle cx="417" cy="54" r="3" fill="#6f6f6f"/>
+  <circle cx="434" cy="96" r="3" fill="#6f6f6f"/>
+  <circle cx="451" cy="138" r="3" fill="#6f6f6f"/>
+  <circle cx="468" cy="180" r="3" fill="#6f6f6f"/>
+  <circle cx="485" cy="222" r="3" fill="#6f6f6f"/>
+  <circle cx="502" cy="264" r="3" fill="#6f6f6f"/>
+  <circle cx="446" cy="22" r="3" fill="#6f6f6f"/>
+  <circle cx="463" cy="64" r="3" fill="#6f6f6f"/>
+  <circle cx="480" cy="106" r="3" fill="#6f6f6f"/>
+  <circle cx="497" cy="148" r="3" fill="#6f6f6f"/>
+  <circle cx="514" cy="190" r="3" fill="#6f6f6f"/>
+  <circle cx="531" cy="232" r="3" fill="#6f6f6f"/>
+  <circle cx="548" cy="274" r="3" fill="#6f6f6f"/>
+  <circle cx="492" cy="32" r="3" fill="#6f6f6f"/>
+  <circle cx="509" cy="74" r="3" fill="#6f6f6f"/>
+  <circle cx="526" cy="116" r="3" fill="#6f6f6f"/>
+  <circle cx="543" cy="158" r="3" fill="#6f6f6f"/>
+  <circle cx="560" cy="200" r="3" fill="#6f6f6f"/>
+  <circle cx="577" cy="242" r="3" fill="#6f6f6f"/>
+  <circle cx="538" cy="42" r="3" fill="#6f6f6f"/>
+  <circle cx="555" cy="84" r="3" fill="#6f6f6f"/>
+  <circle cx="572" cy="126" r="3" fill="#6f6f6f"/>
+  <circle cx="589" cy="168" r="3" fill="#6f6f6f"/>
+  <circle cx="606" cy="210" r="3" fill="#6f6f6f"/>
+  <circle cx="623" cy="252" r="3" fill="#6f6f6f"/>
+  <circle cx="584" cy="52" r="3" fill="#6f6f6f"/>
+  <circle cx="601" cy="94" r="3" fill="#6f6f6f"/>
+  <circle cx="618" cy="136" r="3" fill="#6f6f6f"/>
+  <circle cx="635" cy="178" r="3" fill="#6f6f6f"/>
+  <circle cx="613" cy="20" r="3" fill="#6f6f6f"/>
+  <circle cx="630" cy="62" r="3" fill="#6f6f6f"/>
+  <circle cx="330" cy="150" r="5" fill="#f2f2f2"/>
+  <line x1="330" y1="150" x2="422" y2="170" stroke="#268bd2" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="330" y1="150" x2="364" y2="234" stroke="#268bd2" stroke-width="3" marker-end="url(#arrow)"/>
+  <circle cx="460" cy="127" r="6" fill="none" stroke="#cb7d3c" stroke-width="2.5"/>
+  <rect x="790" y="41" width="8" height="14" fill="#3a3a3a"/>
+  <rect x="790" y="245" width="8" height="14" fill="#3a3a3a"/>
+  <rect x="825" y="41" width="8" height="14" fill="#3a3a3a"/>
+  <rect x="825" y="245" width="8" height="14" fill="#3a3a3a"/>
+  <rect x="860" y="41" width="8" height="14" fill="#3a3a3a"/>
+  <rect x="860" y="245" width="8" height="14" fill="#3a3a3a"/>
+  <rect x="895" y="41" width="8" height="14" fill="#3a3a3a"/>
+  <rect x="895" y="245" width="8" height="14" fill="#3a3a3a"/>
+  <rect x="930" y="41" width="8" height="14" fill="#3a3a3a"/>
+  <rect x="930" y="245" width="8" height="14" fill="#3a3a3a"/>
+  <rect x="965" y="41" width="8" height="14" fill="#3a3a3a"/>
+  <rect x="965" y="245" width="8" height="14" fill="#3a3a3a"/>
+  <rect x="1000" y="41" width="8" height="14" fill="#3a3a3a"/>
+  <rect x="1000" y="245" width="8" height="14" fill="#3a3a3a"/>
+  <rect x="1035" y="41" width="8" height="14" fill="#3a3a3a"/>
+  <rect x="1035" y="245" width="8" height="14" fill="#3a3a3a"/>
+  <rect x="1070" y="41" width="8" height="14" fill="#3a3a3a"/>
+  <rect x="1070" y="245" width="8" height="14" fill="#3a3a3a"/>
+  <rect x="746" y="85" width="14" height="8" fill="#3a3a3a"/>
+  <rect x="1100" y="85" width="14" height="8" fill="#3a3a3a"/>
+  <rect x="746" y="125" width="14" height="8" fill="#3a3a3a"/>
+  <rect x="1100" y="125" width="14" height="8" fill="#3a3a3a"/>
+  <rect x="746" y="165" width="14" height="8" fill="#3a3a3a"/>
+  <rect x="1100" y="165" width="14" height="8" fill="#3a3a3a"/>
+  <rect x="746" y="205" width="14" height="8" fill="#3a3a3a"/>
+  <rect x="1100" y="205" width="14" height="8" fill="#3a3a3a"/>
+  <rect x="760" y="55" width="340" height="190" rx="12" fill="#252525" stroke="#268bd2" stroke-width="1.5"/>
+  <text x="930.0" y="107" fill="#f2f2f2" font-family="'PT Sans', Helvetica, Arial, sans-serif" font-size="26" font-weight="bold" text-anchor="middle">Kyber512</text>
+  <text x="930.0" y="135" fill="#6f6f6f" font-family="'Fira Code', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="15" font-weight="normal" text-anchor="middle">CCA-KEM  ·  FPGA</text>
+  <rect x="800" y="163" width="120" height="50" rx="8" fill="#1d1d1d" stroke="#3a3a3a" stroke-width="1.5"/>
+  <text x="860" y="194" fill="#d6d6d6" font-family="'Fira Code', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="15" font-weight="normal" text-anchor="middle">share 0</text>
+  <rect x="940" y="163" width="120" height="50" rx="8" fill="#1d1d1d" stroke="#3a3a3a" stroke-width="1.5"/>
+  <text x="1000" y="194" fill="#d6d6d6" font-family="'Fira Code', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="15" font-weight="normal" text-anchor="middle">share 1</text>
+  <text x="930.0" y="196" fill="#268bd2" font-family="'PT Sans', Helvetica, Arial, sans-serif" font-size="26" font-weight="normal" text-anchor="middle">+</text>
+</svg>
